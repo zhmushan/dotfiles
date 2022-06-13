@@ -9,7 +9,8 @@
     // #region Lang
     "denoland.vscode-deno",
     "rust-lang.rust-analyzer",
-    "Vue.volar"
+    "Vue.volar",
+    "bmalehorn.vscode-fish"
     // #endregion Lang
   ]
 }
