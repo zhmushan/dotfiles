@@ -1,0 +1,253 @@
+[
+  //
+  // #region Remove Default Behavior
+  //
+
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+
+  //
+  // #endregion Remove Default Behavior
+  //
+
+  //
+  // #region Cursor Move & Select
+  //
+
+  {
+    "key": "ctrl+p",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+p",
+    "command": "cursorUpSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "ctrl+n",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+n",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "ctrl+f",
+    "command": "cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+f",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "ctrl+b",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+b",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "ctrl+a",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+a",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "ctrl+e",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+ctrl+e",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+f",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+b",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+b",
+    "command": "cursorWordLeftSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+,",
+    "command": "cursorTop",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+,",
+    "command": "cursorTopSelect",
+    "when": "textInputFocus"
+  },
+
+  {
+    "key": "alt+.",
+    "command": "cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+.",
+    "command": "cursorBottomSelect",
+    "when": "textInputFocus"
+  },
+
+  //
+  // #endregion Cursor Move & Select
+  //
+
+  //
+  // #region Basic Action
+  //
+
+  {
+    "key": "ctrl+d",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+d",
+    "command": "deleteWordRight",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "execCopy"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "execPaste"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "redo"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "undo"
+  },
+
+  {
+    "key": "ctrl+g",
+    "command": "cancelSelection",
+    "when": "editorHasSelection && textInputFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "removeSecondaryCursors",
+    "when": "editorHasMultipleSelections && textInputFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "closeFindWidget",
+    "when": "editorFocus && findWidgetVisible && !isComposing"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "editor.action.cancelSelectionAnchor",
+    "when": "editorTextFocus && selectionAnchorSet"
+  },
+
+  {
+    "key": "alt+x",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "alt+ctrl+n",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+
+  //
+  // #endregion Basic Action
+  //
+
+
+  //
+  // #region Advance Action
+  //
+
+  {
+    "key": "ctrl+x ctrl+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+x ctrl+a",
+    "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+x ctrl+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+x ctrl+l",
+    "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "workbench.action.quickOpen"
+  }
+
+  //
+  // #endregion Advance Action
+  //
+]
