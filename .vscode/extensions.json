@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    // #region Editor
+    "PKief.material-icon-theme",
+    "antfu.file-nesting",
+    "eamodio.gitlens",
+    // #endregion Editor
+
+    // #region Lang
+    "denoland.vscode-deno",
+    "rust-lang.rust-analyzer",
+    "Vue.volar"
+    // #endregion Lang
+  ]
+}

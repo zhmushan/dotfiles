@@ -1,21 +1,24 @@
 [
-  //
   // #region Remove Default Behavior
-  //
-
   {
     "key": "ctrl+g",
     "command": "-workbench.action.gotoLine"
   },
-
-  //
+  {
+    "key": "ctrl+x",
+    "command": "-execCut"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "-editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "-filesExplorer.cut"
+  },
   // #endregion Remove Default Behavior
-  //
 
-  //
   // #region Cursor Move & Select
-  //
-
   {
     "key": "ctrl+p",
     "command": "cursorUp",
@@ -135,15 +138,9 @@
     "command": "cursorBottomSelect",
     "when": "textInputFocus"
   },
-
-  //
   // #endregion Cursor Move & Select
-  //
 
-  //
   // #region Basic Action
-  //
-
   {
     "key": "ctrl+d",
     "command": "deleteRight",
@@ -217,15 +214,19 @@
     "when": "editorFocus"
   },
 
-  //
+  {
+    "key": "shift+alt+p",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
   // #endregion Basic Action
-  //
 
-
-  //
   // #region Advance Action
-  //
-
   {
     "key": "ctrl+x ctrl+s",
     "command": "workbench.action.files.save"
@@ -245,9 +246,31 @@
   {
     "key": "ctrl+x ctrl+f",
     "command": "workbench.action.quickOpen"
-  }
+  },
+  {
+    "key": "ctrl+x ctrl+k",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+x k",
+    "command": "workbench.action.closeActiveEditor"
+  },
 
-  //
+  // #region Cut
+  {
+    "key": "ctrl+x ctrl+x",
+    "command": "execCut"
+  },
+  {
+    "key": "ctrl+x ctrl+x",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+x ctrl+x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  }
+  // #endregion Cut
+
   // #endregion Advance Action
-  //
 ]
