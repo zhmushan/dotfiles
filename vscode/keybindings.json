@@ -203,6 +203,16 @@
     "command": "editor.action.cancelSelectionAnchor",
     "when": "editorTextFocus && selectionAnchorSet"
   },
+  {
+    "key": "ctrl+g",
+    "command": "closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "leaveSnippet",
+    "when": "editorTextFocus && inSnippetMode"
+  },
 
   {
     "key": "alt+x",
