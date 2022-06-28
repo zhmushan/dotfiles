@@ -153,11 +153,11 @@
   },
   {
     "key": "ctrl+c",
-    "command": "execCopy"
+    "command": "editor.action.clipboardCopyAction"
   },
   {
     "key": "ctrl+v",
-    "command": "execPaste"
+    "command": "editor.action.clipboardPasteAction"
   },
   {
     "key": "ctrl+;",
@@ -223,6 +223,11 @@
     "key": "shift+alt+n",
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
   },
   // #endregion Basic Action
 
